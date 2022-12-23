@@ -17,11 +17,11 @@ namespace BudzetoweKanapkiJarkaNiechluja
         public string Description = "";
         public string Price;
 
-        public void GenerateMenu()
+        public void Generate()
         {
             string randomProtein = Proteins[Randomizer.Next(Proteins.Length)];
-            string randomCondiment = Proteins[Randomizer.Next(Condiments.Length)];
-            string randomBread = Proteins[Randomizer.Next(Breads.Length)];
+            string randomCondiment = Condiments[Randomizer.Next(Condiments.Length)];
+            string randomBread = Breads[Randomizer.Next(Breads.Length)];
 
             Description = $"{randomProtein} i {randomCondiment}. Pieczywo: {randomBread}.";
 
